@@ -1,6 +1,13 @@
-# Svelte + Vite
+# Svelte + Vite + particles
 
 This template should help get you started developing with Svelte in Vite.
+
+-✅ particles beta added
+
+-❌ confeti needed
+
+-❌ practicar svelte hasta llegar a sveltekit falta.
+
 
 ## Recommended IDE Setup
 

@@ -1,7 +1,7 @@
 {
   "name": "svelte-examples",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -14,6 +14,8 @@
     "vite": "^5.2.0"
   },
   "dependencies": {
+    "@tsparticles/slim": "^3.4.0",
+    "@tsparticles/svelte": "^3.0.0",
     "idb": "^8.0.0"
   }
 }

@@ -1,7 +1,10 @@
 <script>
   import item from './data.json';
-  let count = 0;
+  
+  
 
+  let count = 0;
+  
   const increment = () => {
     count += 1
   }
