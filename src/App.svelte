@@ -2,8 +2,10 @@
   import svelteLogo from './assets/svelte.svg'
   import viteLogo from '/vite.svg'
   import Counter from './lib/Counter.svelte'
+  import ButtonShop from './lib/ButtonShop.svelte';
   import Particles,{particlesInit} from '@tsparticles/svelte';
   import {loadSlim} from '@tsparticles/slim';
+  
 
   // START PARTICLES
   let particlesConfig = {
@@ -54,7 +56,7 @@
     </a>
   </div>
   <h1>Vite + Svelte</h1>
-
+  <ButtonShop/>
   <div class="card">
     <Counter />
   </div>
@@ -68,6 +70,7 @@
   class="tsparticles2"
   on:particlesLoaded={onParticlesLoaded}
   options={particlesConfig} />
+
   <p class="read-the-docs">
     Click on the Vite and Svelte logos to learn more
   </p>
