@@ -5,6 +5,7 @@
   import ButtonShop from './lib/ButtonShop.svelte';
   import Particles,{particlesInit} from '@tsparticles/svelte';
   import {loadSlim} from '@tsparticles/slim';
+  import Links from './lib/Links.svelte';
   
 
   // START PARTICLES
@@ -48,6 +49,7 @@
 
 <main>
   <div>
+    <Links/>
     <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
       <img src={viteLogo} class="logo" alt="Vite Logo" />
     </a>
