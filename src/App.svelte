@@ -7,6 +7,8 @@
   import {loadSlim} from '@tsparticles/slim';
   import Links from './lib/Links.svelte';
   
+  
+  
 
   // START PARTICLES
   let particlesConfig = {
@@ -28,26 +30,27 @@
       detectRetina: true
     }
   };
-      let onParticlesLoaded = (event) => {
-        const particlesContainer = event.detail.particles;
-
-        // you can use particlesContainer to call all the Container class
-        // (from the core library) methods like play, pause, refresh, start, stop
-    };
-
-    void particlesInit(async (engine) => {
-        // call this once per app
-        // you can use main to customize the tsParticles instance adding presets or custom shapes
-        // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-        // starting from v2 you can add only the features you need reducing the bundle size
-        //await loadFull(engine);
-        await loadSlim(engine);
-    });
+  let onParticlesLoaded = (event) => {
+    const particlesContainer = event.detail.particles;
+    
+    // you can use particlesContainer to call all the Container class
+    // (from the core library) methods like play, pause, refresh, start, stop
+  };
+  
+  void particlesInit(async (engine) => {
+    // call this once per app
+    // you can use main to customize the tsParticles instance adding presets or custom shapes
+    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+    // starting from v2 you can add only the features you need reducing the bundle size
+    //await loadFull(engine);
+    await loadSlim(engine);
+  });
   // END PARTICLES configs
   
 </script>
 
 <main>
+  
   <div>
     <Links/>
     <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
@@ -62,7 +65,6 @@
   <div class="card">
     <Counter />
   </div>
-
   <p>
     Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank" rel="noreferrer">SvelteKit</a>, the official Svelte app framework powered by Vite!
   </p>
